@@ -1,0 +1,33 @@
+# Local environments, IDE settings, and OS files
+.venv/
+venv/
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+
+# Downloaded images, processed arrays, and trained weights stay local.
+data/raw/
+data/processed/
+data/weights/
+*.pt
+*.pth
+
+# Full diagnostic galleries and raw histories stay local.
+# Publish only the small, curated results/summary/ and results/figures/.
+results/plots/
+results/*_history.npz
+
+# Build/test caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
